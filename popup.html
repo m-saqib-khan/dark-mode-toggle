@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dark Mode Toggle</title>
+    <style>
+      :root {
+        --bg: #111827;
+        --fg: #f9fafb;
+        --accent: #38bdf8;
+        --border: #1f2937;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 16px;
+        width: 240px;
+        background: var(--bg);
+        color: var(--fg);
+        font: 14px/1.4 "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: #0f172a;
+        color: var(--fg);
+        cursor: pointer;
+        font-weight: 600;
+        transition: background 120ms ease, border-color 120ms ease;
+      }
+
+      button:hover {
+        background: #111c33;
+        border-color: var(--accent);
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      .status {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #cbd5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dark Mode</h1>
+    <button id="toggle">Enable Dark Mode</button>
+    <div class="status" id="status">Not active</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

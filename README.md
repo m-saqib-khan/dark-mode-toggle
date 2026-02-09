@@ -20,6 +20,3 @@ A minimal Chrome extension (Manifest V3) that toggles a simple dark mode for the
 - `popup.js`: Popup logic
 - `content.js`: Injects/removes dark mode styles
 - `styles.css`: Dark mode CSS
-
-# dark-mode-toggle
-

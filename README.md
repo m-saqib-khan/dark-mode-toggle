@@ -11,7 +11,7 @@ A minimal Chrome extension (Manifest V3) that toggles a simple dark mode for the
 ## Install (Developer Mode)
 1. Open Chrome and go to `chrome://extensions`.
 2. Enable **Developer mode**.
-3. Click **Load unpacked** and select this folder: `h:\Work\dark-mode-toggle`.
+3. Click **Load unpacked** and select this folder: `h:\<project-folder>`.
 4. Click the extension icon and use the toggle button.
 
 ## Files
